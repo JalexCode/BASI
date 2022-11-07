@@ -1,0 +1,11 @@
+Modos de implementar A*
+
+# Los Nodos seran las fichas individuales
+
+
+# El nodo de inicio sera la lista de fichas desordenadas y el nodo de fin sera la lista ordenada
+- El algoritmo movera las fichas dentro de la lista de forma tal que logre acercarla de su estado incial a su estado final.
+-
+
+# El nodo de inicio sera la fihc vacia -1 en su posicion inicial y el nodo final sera la ficha vacia -1 en su posicion fianl
+- El algorrtimo movera a la ficha -1 de forma tal que mientras la mueva deje a las demas fichas en su lugar y a su vez buske la ruta mas corta para llegar a su destino

@@ -1,0 +1,52 @@
+from modelo.juego_fichas.ficha import Ficha
+import modelo.juego_fichas.juego_fichas as jf
+
+'''ficha1 = Ficha(1, 0, 0, None, -1, None, 2)
+ficha2 = Ficha(2, 0, 1, None, 4, 1, 3)
+ficha3 = Ficha(3, 0, 2, None, 6, 2, None)
+ficha4 = Ficha(4, 1, 0, 1, 7, None, 5)
+ficha5 = Ficha(5, 1, 1, 2, 8, 4, 6)
+ficha6 = Ficha(6, 1, 2, 3, -1, 5, None)
+ficha7 = Ficha(7, 2, 0, 4, None, None, 8)
+ficha8 = Ficha(8, 2, 1, 5, None, 7, -1)
+ficha_neutra = Ficha(-1, 2, 2, 6, None, 8, None)
+ficha1 = Ficha(1, 0, 0, None, -1, None, 2)
+ficha2 = Ficha(2, 0, 1, None, 4, 1, 3)
+ficha3 = Ficha(3, 0, 2, None, 6, 2, None)
+ficha4 = Ficha(4, 1, 1, 2, 5, -1, 6)
+ficha5 = Ficha(5, 2, 1, 4, None, 7, 8)
+ficha6 = Ficha(6, 1, 2, 3, 8, 4, None)
+ficha7 = Ficha(7, 2, 0, -1, None, None, 5)
+ficha8 = Ficha(8, 2, 2, 6, None, 5, None)
+ficha_neutra = Ficha(-1, 1, 0, 1, 7, None, 4)'''
+# jf.poner_fichas(jf.fichas, False)
+# print((jf.mostrar(jf.fichas)))
+# print(jf.posibles_movidas(jf.fichas))
+print([1, 2, 3, 2] == [1, 2, 3, 4])
+# jf.mover_ficha(jf.fichas, 6)
+# jf.mover_ficha(jf.fichas, 5)
+# jf.mover_ficha(jf.fichas, 2)
+# jf.mover_ficha(jf.fichas, 1)
+#jf.mover_ficha(jf.fichas, 4)
+#jf.solucionar(jf.fichas)
+#print('----------------------')
+'''1 2 3    1 2 3    1 2 3    1 2 3
+     4 6 -> 4   6 -> 4 5 6 -> 4 5 6
+   7 5 8    7 5 8    7   8    7 8  '''
+#juego.mover_ficha(7)
+#juego.mover_ficha(7)
+'''print('---- MUEVO 4 ----')
+juego.mover_ficha(4)
+print(str(juego))
+print("HEURISTICA: %d"%juego.heuristica())
+print('---- MUEVO 5 ----')
+juego.mover_ficha(5)
+print(str(juego))
+print("HEURISTICA: %d"%juego.heuristica())
+print('---- MUEVO 8 ----')
+juego.mover_ficha(8)
+print(str(juego))
+print("HEURISTICA: %d"%juego.heuristica())'''
+'''print('----------------------')
+juego.ordenar(False)
+print(juego)'''

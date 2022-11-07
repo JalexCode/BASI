@@ -1,0 +1,24 @@
+1 2 3    1 2 3    1 2 3    1 2 3
+  4 6 -> 4   6 -> 4 5 6 -> 4 5 6
+7 5 8    7 5 8    7   8    7 8
+
+
+        self.ficha1 = Ficha(1, 0, 0, None, -1, None, self.ficha2)
+        self.ficha2 = Ficha(2, 0, 1, None, self.ficha4, self.ficha1, self.ficha3)
+        self.ficha3 = Ficha(3, 0, 2, None, self.ficha6, self.ficha2, None)
+        self.ficha4 = Ficha(4, 1, 1, self.ficha2, self.ficha5, -1, self.ficha6)
+        self.ficha5 = Ficha(5, 2, 1, self.ficha4, None, self.ficha7, self.ficha8)
+        self.ficha6 = Ficha(6, 1, 2, self.ficha3, self.ficha8, self.ficha4, None)
+        self.ficha7 = Ficha(7, 2, 0, -1, None, None, self.ficha5)
+        self.ficha8 = Ficha(8, 2, 2, self.ficha6, None, self.ficha5, None)
+
+    def setUp(self):
+        self.ficha1 = Ficha(1, 0, 0, None, -1, None, self.ficha2)
+        self.ficha2 = Ficha(2, 0, 1, None, self.ficha4, self.ficha1, self.ficha3)
+        self.ficha3 = Ficha(3, 0, 2, None, self.ficha6, self.ficha2, None)
+        self.ficha4 = Ficha(4, 1, 0, self.ficha1, self.ficha7, None, self.ficha5)
+        self.ficha5 = Ficha(5, 1, 1, self.ficha2, self.ficha8, self.ficha4, self.ficha6)
+        self.ficha6 = Ficha(6, 1, 2, self.ficha3, -1, self.ficha5, None)
+        self.ficha7 = Ficha(7, 2, 0, self.ficha4, None, None, self.ficha8)
+        self.ficha8 = Ficha(8, 2, 1, self.ficha5, None, self.ficha7, -1)
+        self.poner_fichas()

@@ -1,0 +1,11 @@
+graph nombre_del_diagrama {
+     // Este atributo se aplica al diagrama en si mismo, y modifica el tamaño
+     size="1,1";
+     // El atributo label (etiqueta) puede usarse para modificar el título de un nodo
+     a [label="Raíz"];
+     // Este atributo cambia la forma del nodo b
+     b [shape=box];
+     // Se puede cambiar el tipo de línea que rodea a las figuras con los atributos color y style (estílo)
+     a -- b -- c [color=blue];
+     b -- d [style=dotted];
+ }

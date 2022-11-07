@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>743</width>
+    <height>384</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Banco de Algoritmos para Sistemas Inteligentes v1.5</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QLabel" name="bg">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>33</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 20pt &quot;Calibri&quot;;
+color: rgb(255, 255, 255);
+/*background-color: rgb(0, 115, 255);*/
+background-color: rgb(67, 162, 46);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="text">
+       <string>Banco de Algortimos para Sistemas Inteligentes</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>743</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAlgortimos">
+    <property name="title">
+     <string>Algortimos</string>
+    </property>
+    <widget class="QMenu" name="menuB_squeda_heur_stica">
+     <property name="title">
+      <string>Búsqueda heurística</string>
+     </property>
+     <addaction name="bfs"/>
+    </widget>
+    <widget class="QMenu" name="menuGen_ticos_beta">
+     <property name="title">
+      <string>Genéticos</string>
+     </property>
+     <addaction name="max_genetica"/>
+     <addaction name="actionProblema_del_viajero"/>
+    </widget>
+    <addaction name="menuB_squeda_heur_stica"/>
+    <addaction name="menuGen_ticos_beta"/>
+   </widget>
+   <widget class="QMenu" name="menuAplicaci_n">
+    <property name="title">
+     <string>Inicio</string>
+    </property>
+    <widget class="QMenu" name="menuEstructuras_de_datos">
+     <property name="title">
+      <string>Estructuras de datos</string>
+     </property>
+     <addaction name="crear_arbol"/>
+     <addaction name="crear_grafo"/>
+    </widget>
+    <widget class="QMenu" name="menuExportar">
+     <property name="title">
+      <string>Exportar (beta)</string>
+     </property>
+     <addaction name="action_rbol_y_recorridos"/>
+     <addaction name="actionAlgoritmos"/>
+    </widget>
+    <addaction name="menuEstructuras_de_datos"/>
+    <addaction name="separator"/>
+    <addaction name="menuExportar"/>
+    <addaction name="separator"/>
+    <addaction name="salir"/>
+   </widget>
+   <widget class="QMenu" name="a">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="acerca_de"/>
+    <addaction name="separator"/>
+    <addaction name="desarrollo"/>
+   </widget>
+   <widget class="QMenu" name="menuProblemas">
+    <property name="title">
+     <string>Problemas de heurística</string>
+    </property>
+    <addaction name="actionReinas"/>
+    <addaction name="fichas"/>
+   </widget>
+   <addaction name="menuAplicaci_n"/>
+   <addaction name="menuAlgortimos"/>
+   <addaction name="menuProblemas"/>
+   <addaction name="a"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="salir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="bfs">
+   <property name="text">
+    <string>Best First Search &amp;&amp; Hill Climbing</string>
+   </property>
+  </action>
+  <action name="actionCrear">
+   <property name="text">
+    <string>Crear</string>
+   </property>
+  </action>
+  <action name="crear_arbol">
+   <property name="text">
+    <string>Crear árbol</string>
+   </property>
+  </action>
+  <action name="crear_grafo">
+   <property name="text">
+    <string>Crear grafo (beta)</string>
+   </property>
+  </action>
+  <action name="acerca_de">
+   <property name="text">
+    <string>Acerca de</string>
+   </property>
+  </action>
+  <action name="actionAlgoritmos">
+   <property name="text">
+    <string>Algoritmos</string>
+   </property>
+  </action>
+  <action name="action_rbol_y_recorridos">
+   <property name="text">
+    <string>Árbol y recorridos</string>
+   </property>
+  </action>
+  <action name="actionProblema_de_las_reinas">
+   <property name="text">
+    <string>Problema de las reinas</string>
+   </property>
+  </action>
+  <action name="actionReinas">
+   <property name="text">
+    <string>Reinas (beta)</string>
+   </property>
+  </action>
+  <action name="fichas">
+   <property name="text">
+    <string>8-Puzzle con autosolución</string>
+   </property>
+  </action>
+  <action name="desarrollo">
+   <property name="text">
+    <string>Desarrollo</string>
+   </property>
+  </action>
+  <action name="max_genetica">
+   <property name="text">
+    <string>Maximización de la función f(x^2)</string>
+   </property>
+  </action>
+  <action name="actionProblema_del_viajero">
+   <property name="text">
+    <string>Problema del viajero (beta)</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>salir</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
